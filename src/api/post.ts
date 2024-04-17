@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
             'fields': {
                 'Name': name.slice(0, 20),
                 'title': title,
-                'post link': postLink,
+                'post link': process.env.PROJECT_BASE_LINK + postLink,
             },
         },
     ], function (err, records) {
