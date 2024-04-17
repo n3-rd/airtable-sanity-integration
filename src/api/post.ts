@@ -22,7 +22,7 @@ router.post('/', (req, res) => {
     base('posts').create([
         {
             'fields': {
-                'Name': name.slice(0, 20),
+                'Name': name,
                 'title': title,
                 'post link': process.env.PROJECT_BASE_LINK + postLink,
             },
